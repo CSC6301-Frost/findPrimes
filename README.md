@@ -23,7 +23,7 @@ Once running, the follow the instructions in the terminal.
 
 **Jeffrey Frost**
 
-- **Version:** 1.0 (Homework Assignment 7)
+- **Version:** 1.1 (Homework Assignment 7)
 - **Date:** 02MAR25
 
 ---
