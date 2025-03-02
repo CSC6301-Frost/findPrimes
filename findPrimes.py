@@ -1,6 +1,6 @@
 """ CSC 6301 - Assignment 7
 Jeffrey Frost
-Version 1.0
+Version 1.1
 """
 
 
@@ -15,8 +15,7 @@ def guess():
     return random.randint(2, 5000)
 
 def isPrime(x):
-    """isPrime function determine whether the argument x is a prime number or not.  x must be an integer
-    to avoid a typeError at the range function.
+    """isPrime function determine whether the argument x is a prime number or not.  This implementation is from CSC-6303 week 2 C++ code example
 
     Args:
         x (int): candidate value to determine whether it is a prime number or not
@@ -24,9 +23,15 @@ def isPrime(x):
     Returns:
         boolean: True if prime number / False if not prime number
     """
-    for i in range(x):
-        for j in range(x):
-            if i * j == x:
+    if (x <= 1):
+        return False
+    elif (x <= 3):
+        return True
+    elif (x % 2 == 0 ) or (x % 3 == 0):
+        return False
+    else:
+        for i in range(5, x, 6):
+            if (x % i == 0) or (x % (i + 2) == 0):
                 return False
     return True
 
